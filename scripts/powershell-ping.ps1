@@ -1,0 +1,1 @@
+ping -t api.smart-connect.cloud | Foreach{"{0} - {1}" -f (Get-Date -Format "dd/MM/yyyy HH:mm:ss.fff"),$_} | tee ping.txt
