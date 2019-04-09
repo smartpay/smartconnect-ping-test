@@ -23,3 +23,13 @@ Note that it is not unusual to have one-off issues – where a single request ti
 Obviously, these scripts need to be executed on the same network which the POS and the EFTPOS device are connected to - ideally on the same host machine where the POS is installed (if it is a desktop machine), or on a desktop/laptop connected to the same WiFi network or the same switch (if it is a tablet or otherwise not possible to run it on the main desktop).
 
 In order to obtain the most insight into the network performance, the script should ideally be executed _around the time_ issues in connectivity are being observed, and generally for longer periods of time. Our recommendation is to have it running for a minimum of 15-20 minutes and analyze the trends in latency/drops during that time; or leave it running for several hours if issues happen randomly throughout the day.
+
+A healthy network will generally produce an output like this:
+
+![Healthy Network](/readme-images/healthy.png)
+
+In contrast, a sub-optimal network performance might produce an output looking like this:
+
+![Unhealthy Network](/readme-images/unhealthy.png)
+
+The sharp increases in latency and request timeouts are a good indication that the data exchange between SmartConnect and the POS/EFTPOS Terminal is likely to experience delays and interruptions.
