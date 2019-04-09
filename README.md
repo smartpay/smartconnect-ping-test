@@ -12,7 +12,7 @@ There are 4 files in the `scripts` folder that might be used:
 
 * [ping.sh](/scripts/ping.sh) – a Bash version to execute on **macOS**, outputting **both** to the console and a file.
 
-#### What to look for in the output
+### What to look for in the output
 
 An indication of sub-optimal network performance is either:
 
@@ -26,7 +26,7 @@ Obviously, these scripts need to be executed on the same network which the POS a
 
 In order to obtain the most insight into the network performance, the script should ideally be executed _around the time_ issues in connectivity are being observed, and generally for longer periods of time. Our recommendation is to have it running for a minimum of 15-20 minutes and analyze the trends in latency/drops during that time; or leave it running for several hours if issues happen randomly throughout the day.
 
-#### Examples of healthy and unhealthy network performance
+### Examples of healthy and unhealthy network performance
 
 A healthy network will generally produce an output like this:
 
