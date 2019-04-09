@@ -12,6 +12,8 @@ There are 4 files in the `scripts` folder that might be used:
 
 * [ping.sh](/scripts/ping.sh) – a Bash version to execute on **macOS**, outputting **both** to the console and a file.
 
+#### What to look for in the output
+
 An indication of sub-optimal network performance is either:
 
 * **Connection errors** - timeouts or otherwise failures, or
@@ -23,6 +25,8 @@ Note that it is not unusual to have one-off issues – where a single request ti
 Obviously, these scripts need to be executed on the same network which the POS and the EFTPOS device are connected to - ideally on the same host machine where the POS is installed (if it is a desktop machine), or on a desktop/laptop connected to the same WiFi network or the same switch (if it is a tablet or otherwise not possible to run it on the main desktop).
 
 In order to obtain the most insight into the network performance, the script should ideally be executed _around the time_ issues in connectivity are being observed, and generally for longer periods of time. Our recommendation is to have it running for a minimum of 15-20 minutes and analyze the trends in latency/drops during that time; or leave it running for several hours if issues happen randomly throughout the day.
+
+#### Examples of healthy and unhealthy network performance
 
 A healthy network will generally produce an output like this:
 
